@@ -1,0 +1,26 @@
+Question 1) create players table 
+-- create players table 
+CREATE TABLE players(
+player_id INT NOT NULL, 
+first_name VARCHAR (40) NOT NULL, 
+last_name VARCHAR (50) NOT NULL, 
+hand VARCHAR (3) NOT NULL, 
+country_code VARCHAR (10),
+PRIMARY KEY (player_id));
+
+Question 2) 
+-- create matches table 
+CREATE TABLE matches(
+loser_age FLOAT NOT NULL, 
+loser_id INT NOT NULL, 
+loser_name VARCHAR (50) NOT NULL, 
+loser_rank INT NOT NULL,
+winner_age FLOAT NOT NULL,
+winner_id INT NOT NULL,
+winner_name VARCHAR (50) NOT NULL, 
+winner_rank INT NOT NULL);
+
+Question 3) 
+SELECT COUNT (hand)
+FROM players
+WHERE hand = 'L';
